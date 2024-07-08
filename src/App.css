@@ -1,6 +1,17 @@
-.App {
+.App,
+.Account {
   text-align: center;
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  width: 20rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 20rem;
 }
+
+h2 {
+  margin: 1rem;
+} 
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +37,36 @@
 
 .App-link {
   color: #61dafb;
+}
+
+form {
+  display: grid;
+  align-items: center;
+}
+
+form div {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+form div input {
+  height: 1.5rem;
+  width: 10rem;
+}
+
+form button {
+  justify-self: center;
+  align-self: center;
+  height: 2.25rem;
+  width: 10rem;
+}
+
+.middle-div {
+  height: 100vh;
+  border: 1px solid black;
 }
 
 @keyframes App-logo-spin {
